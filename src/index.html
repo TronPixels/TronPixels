@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TronPixels is a community-driven pixel art platform powered by the BitTorrent Chain. Create, share, and explore unique digital artworks.">
+    <meta name="keywords" content="TronPixels, pixel art, BitTorrent Chain, digital art, community art, blockchain, crypto art">
+    <meta name="author" content="TronPixels Team">
+    <meta property="og:title" content="TronPixels - A Decentralized Pixel Art Community">
+    <meta property="og:description" content="Join the TronPixels community to create and share pixel art on the BitTorrent Chain.">
+    <meta property="og:image" content="logo/logo-color.png">
+    <meta property="og:url" content="https://tronpixels.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TronPixels - A Decentralized Pixel Art Community">
+    <meta name="twitter:description" content="Create and explore pixel art with TronPixels, powered by the BitTorrent Chain.">
+    <meta name="twitter:image" content="logo/logo-color.png">
+    <meta name="theme-color" content="#0c9323">
+    <title>TronPixels</title>
+
+
+    <link rel="icon" type="image/png" href="logo/logo-color.png">
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" style="color: #dddddd; text-decoration: none;">
+                <h1>TronPixels</h1>
+            </a>
+            <a href="submit.html" style="color: #dddddd; text-decoration: none; ">
+                <h2>Post</h2>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="canvas-section" style="display: none;">
+            <div class="app">
+                <canvas class="canvas"></canvas>
+                <div class="toolbox">
+                    <div class="palette-container">
+                        <h2>Colors</h2>
+                        <div class="palette"></div>
+                    </div>
+                    <div class="structures-container">
+                        <h2>Structures</h2>
+                        <div class="structures"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="toolbar">
+                <button class="clear warn">Clear map</button>
+                <button class="save">Submit</button>
+            </div>
+            <div>
+                <label for="title">Title (30 characters max):</label>
+                <input type="text" id="title" name="title" maxlength="30" required>
+                <p id="title-char-count">30 characters left</p>
+            </div>
+            <div>
+                <label for="description">Description (100 characters max):</label>
+                <textarea id="description" name="description" maxlength="100" required></textarea>
+                <p id="description-char-count">100 characters left</p>
+            </div>
+
+            <div id="tags-container">
+                <h3>Select Tags (min 1, max 5):</h3>
+                <div class="tags">
+                    <label><input type="checkbox" name="tags" value="Anime & Manga"> Anime & Manga</label>
+                    <label><input type="checkbox" name="tags" value="Latest News"> Latest News</label>
+                    <label><input type="checkbox" name="tags" value="Humor"> Humor</label>
+                    <label><input type="checkbox" name="tags" value="Memes"> Memes</label>
+                    <label><input type="checkbox" name="tags" value="Gaming"> Gaming</label>
+                    <label><input type="checkbox" name="tags" value="WTF"> WTF</label>
+                    <label><input type="checkbox" name="tags" value="Relationship & Dating"> Relationship & Dating</label>
+                    <label><input type="checkbox" name="tags" value="Motor Vehicles"> Motor Vehicles</label>
+                    <label><input type="checkbox" name="tags" value="Animals & Pets"> Animals & Pets</label>
+                    <label><input type="checkbox" name="tags" value="Science & Tech"> Science & Tech</label>
+                    <label><input type="checkbox" name="tags" value="Comic"> Comic</label>
+                    <label><input type="checkbox" name="tags" value="Wholesome"> Wholesome</label>
+                    <label><input type="checkbox" name="tags" value="Sports"> Sports</label>
+                    <label><input type="checkbox" name="tags" value="Movies & TV"> Movies & TV</label>
+                    <label><input type="checkbox" name="tags" value="Cat"> Cat</label>
+                    <label><input type="checkbox" name="tags" value="Food & Drinks"> Food & Drinks</label>
+                    <label><input type="checkbox" name="tags" value="Lifestyle"> Lifestyle</label>
+                    <label><input type="checkbox" name="tags" value="Superhero"> Superhero</label>
+                    <label><input type="checkbox" name="tags" value="Crypto"> Crypto</label>
+                    <label><input type="checkbox" name="tags" value="Random"> Random</label>
+                    <label><input type="checkbox" name="tags" value="Woah"> Woah</label>
+                </div>
+                <p id="tags-limit-message" style="color: red; display: none;">You must select between 1 and 5 tags.</p>
+            </div>
+        </section>
+        <div id="sorting-controls">
+            <button id="sort-new" class="sort-btn active">New</button>
+            <button id="sort-popular" class="sort-btn">Popular</button>
+        </div>
+        <section id="other-users-content">
+            <h2>Connect to BitTorrent Chain Mainnet to view Community Content</h2>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
