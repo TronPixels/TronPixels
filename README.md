@@ -2,6 +2,9 @@
 
 Welcome to **TronPixels**, a decentralized platform where creativity meets blockchain technology. TronPixels allows users to design and share pixel art directly on the **BitTorrent Chain (BTTC)**, combining artistic expression with the power of decentralized, immutable technology.
 
+![TronPixels](https://github.com/user-attachments/assets/fd0715c7-180a-4b0f-8c7d-092a9aa9fca8)
+
+
 ## Introduction
 
 "Have you ever thought about the difference between drawing something by hand and creating something pixel by pixel? While a pen allows for fluid lines, creating pixel art requires precision. Each square plays a critical role, building up a bigger picture piece by piece—like a puzzle where every element matters. TronPixels takes this concept further by merging creativity with blockchain, making every single pixel a secure and verifiable element of the decentralized web."
@@ -11,7 +14,7 @@ TronPixels is more than just a pixel art platform—it’s a space where users c
 ## Features
 
 ### 1. Decentralized Pixel Art Creation
-TronPixels offers a canvas for users to create pixel art directly in their browser. This art is stored in a **25x25 grid**, where each pixel is represented by a color and/or structure.
+TronPixels offers a canvas for users to create pixel art directly in their browser. This art is stored in a **25x25 grid** for now, but we're working on increasing support to **100x100** grids, allowing for more detailed creations. Currently, a variety of colors and structures are available, but we’ll be expanding the color palette to support **all types of colors** in the future.
 
 ### 2. Blockchain-Powered Storage
 Every artwork created on TronPixels is saved on the **BitTorrent Chain (BTTC)**. The data includes:
@@ -34,7 +37,7 @@ TronPixels is more than just art. It’s a canvas for free speech. Users can exp
 ### Smart Contracts
 
 #### 1. Canvas Smart Contract
-Each artwork is stored as a **25x25 grid**, where every pixel holds a unique color or structure. The smart contract allows users to:
+Each artwork is stored as a **25x25 grid** (with plans to expand to **100x100**), where every pixel holds a unique color or structure. The smart contract allows users to:
 - Submit pixel art to the blockchain.
 - Retrieve past artworks by querying the creator's address and timestamp.
 
@@ -52,7 +55,7 @@ Users can upvote their favorite pixel artworks, creating a decentralized system 
 
 ### Frontend
 Built using **HTML**, **CSS**, and **JavaScript**, TronPixels provides a simple, intuitive interface where users can:
-- **Create pixel art** on a 25x25 grid.
+- **Create pixel art** on a 25x25 grid (with plans to expand to **100x100** grids).
 - **Choose colors** and **structures** to enhance their creations.
 - **Submit artwork** to the blockchain in just a few clicks.
 - **View, upvote, and interact** with community creations.
